@@ -3,13 +3,13 @@
 # https://www.reddit.com/r/dailyprogrammer/comments/8bh8dh/20180411_challenge_356_intermediate_goldbachs/
 # Author: CerzBbz
 
-from math import floor, sqrt
+from math import sqrt
 
 primes = [2, 3]
 
 
 def is_prime(n):
-    for x in range(2, floor(sqrt(n)) + 1):
+    for x in range(2, int(sqrt(n)) + 1):
         if n % x == 0:
             return False
     return True
